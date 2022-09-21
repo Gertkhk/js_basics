@@ -1,48 +1,34 @@
+const numbers1 = [43, 56, 33, 23, 44, 36, 5]
+const numbers2 = new Array(22, 45, 33, 76, 54)
+
 let val
 
-// number -> String
-val = String(555)
-val = String(4+4)
-val = String(5.8)
+val = numbers1.length
+val = numbers2.length
 
-// Boolean -> String
-val = String(true)
-val = String(false)
+val = numbers1[3]
+val = numbers1.indexOf(36)
 
-// Object -> String
-val = String(new Date())
+val = Array.isArray(numbers2)
+
+numbers1.push(250)
+numbers1.pop()
+numbers1.unshift(120)
+numbers1.shift()
+
+val = numbers1.concat(numbers2)
+
+const fruits = ['banana', 'apple', 'orange']
+val = fruits.sort()
+
+val = numbers1.sort(function (x,y) {
+    return x - y
+})
+
+
+val = numbers1.sort(function (x,y) {
+    return y - x
+})
+
+
 console.log(val)
-
-// Null -> String
-val = String(null)
-
-// Array -> String
-val = String([1,2,3,4,5])
-
-// undefined -> String
-val = String(undefined)
-
-// String -> Number
-val = Number('5')
-
-// Boolean -> Number
-val = Number(true)
-val = Number(false)
-
-// Null -> Number
-val = Number(null)
-
-// String -> Number
-val = Number('test')
-
-// Array -> Number
-val = Number([1,2,3])
-
-// toString()
-val = (true).toString()
-
-// String -> Integer
-val = parseInt('100.3')
-
-// String -> Float
-val = parseFloat('100.30')
