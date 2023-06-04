@@ -1,27 +1,45 @@
-console.log("hello world!")
+// data types
+// String
+let name = 'Gert Sarv'
+console.log(name)
+console.log(typeof name)
 
-// variables
-let name = "Gert Sarv"
-name = "New name"
+let goodMark = 5
+console.log(goodMark)
+console.log(typeof goodMark)
 
-// const - ei saa ümber väärtustada
-const surname = "Sarv"
-// surname = "New surname" - error
+let persent = 50.3
+console.log(persent)
+console.log(typeof persent)
+
+let isHere = true // false
+console.log(isHere)
+console.log(typeof isHere)
 
 // arrays
 const numbers = [1, 2, 3, 4, 5]
 console.log(numbers)
-numbers.push(6)
-console.log(numbers)
+console.log(typeof numbers)
 
 // objects
 const person = {
     firstname: 'Gert',
     surname: 'Sarv'
 }
-
 console.log(person)
-console.log(person.firstname)
-console.log(person.surname)
-person.department = "IKT"
-console.log(person.department)
+console.log(typeof person)
+
+// Null
+const airplane = null
+console.log(airplane)
+console.log(typeof airplane)
+
+// Symbol
+const sym = Symbol()
+console.log(sym)
+console.log(typeof sym)
+
+// undefined
+let test
+console.log(test)
+console.log(typeof test)
